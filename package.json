@@ -1,0 +1,43 @@
+{
+  "name": "webpack-vendor-bundle-example",
+  "version": "0.0.1",
+  "description": "Easy and simple Webpack configuration example for bundle and vendor separation and load common packages",
+  "author": "Ariful Haque <arifulhb@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --progress --colors --watch",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
+  },
+  "keywords": ["webpack", "bundle", "javascript", "vendor", "Example", "jquery", "bootstrap"],
+
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arifulhb/webpack-vendor-bundle-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arifulhb/webpack-vendor-bundle-example/issues"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "bootstrap": "^3.3.6",
+    "bootstrap-webpack": "0.0.5",
+    "jquery.inputmask": "^3.1.63",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
+    "path": "^0.12.7",
+    "less": "^2.5.3"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.9",
+    "css-loader": "^0.23.0",
+    "exports-loader": "^0.6.2",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "less-loader": "^2.2.2",
+    "file-loader": "^0.8.5",
+    "font-loader": "^0.1.2",
+    "imports-loader": "^0.6.5"
+  }
+}
